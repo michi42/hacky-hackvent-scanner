@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ch.m.hackvent.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/loginSubStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginStatus"
+        android:layout_centerHorizontal="true"
+        android:text="Please login first."
+        android:textSize="15sp" />
+
+    <GridView
+        android:id="@+id/ballGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/scan"
+        android:layout_below="@+id/loginSubStatus"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:numColumns="7"
+        tools:listitem="@android:layout/simple_list_item_1" >
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/loginStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Not logged in ..."
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ballGrid"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ballGrid"
+        android:layout_marginBottom="14dp"
+        android:enabled="false"
+        android:onClick="scanClick"
+        android:text="Scan a ball" />
+
+</RelativeLayout>

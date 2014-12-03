@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ch.m.hackvent.MainActivity" >
+    <item android:id="@+id/logout" android:title="Change User" android:titleCondensed="Change User"></item>
+
+</menu>
